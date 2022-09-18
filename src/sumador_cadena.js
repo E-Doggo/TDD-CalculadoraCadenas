@@ -3,6 +3,10 @@ function sumar_cadena(cadena) {
   {
     return 0;
   }
+  else
+  {
+    return parseInt(cadena);
+  }
 }
 
 export default sumar_cadena;
