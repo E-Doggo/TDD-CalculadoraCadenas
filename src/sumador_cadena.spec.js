@@ -9,3 +9,13 @@ describe("Devolver numeros", () => {
     expect(sumar_cadena("1")).toEqual(1);
   });
 });
+
+
+describe("Sumar cadena", () => {
+  it("Sumar una cadena con un delimitador de ,", () => {
+    expect(sumar_cadena("10,5")).toEqual(15);
+  });
+  it("Sumar una cadena de varios valores con un delimitador de ,", () => {
+    expect(sumar_cadena("10,5,6,11")).toEqual(32);
+  });
+});

@@ -3,10 +3,13 @@ function sumar_cadena(cadena) {
   {
     return 0;
   }
-  else
+  let array = cadena.split(",");
+  let suma = 0;
+  for (let i =0; i < array.length; i++)
   {
-    return parseInt(cadena);
+    suma += parseInt(array[i]);
   }
+  return suma;
 }
 
 export default sumar_cadena;
