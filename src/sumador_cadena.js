@@ -41,7 +41,11 @@ function sumar_cadena(cadena) {
   array = cadena.split(regex);
   for (let i = 0; i < array.length; i++)
   {
-    suma += parseInt(array[i]);
+    let num = parseInt(array[i]);
+    if (!isNaN(num) && num < 1000)
+    {
+      suma += num;
+    }
   }
   return suma;
 }

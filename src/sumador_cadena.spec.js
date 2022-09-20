@@ -33,4 +33,15 @@ describe("Sumar cadena con delimitadores personalizados", () => {
   it("Sumar una cadena con varios delimitador asignados", () => {
     expect(sumar_cadena("[: ;]10:20;5-4,20")).toEqual(59);
   });
+
+
+});
+
+describe("Verificar valor", () => {
+  it("No deberia aceptar la cadena porque no es numero", () => {
+    expect(sumar_cadena("cadena")).toEqual(0);
+  });
+  it("No deberia tomar en cuenta el 1000", () => {
+    expect(sumar_cadena("1000,100,10")).toEqual(110);
+  });
 });
